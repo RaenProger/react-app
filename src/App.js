@@ -7,17 +7,18 @@ import Weather from "./components/weather";
 
 const APIKEY = '48c4a0b767c988d09cac9cc91b7cbf83';
 
-class App extends React.Component{
-    constructor () {
-        this.state = {
-          temp: null,
-          city: null,
-          country: null,
-          pressure: null,
-          sunset: null,
-          error: null,
-        }
-     }
+class App extends React.Component
+{
+        
+            state = {
+                        temp: undefined,
+                        city: undefined,
+                        country: undefined,
+                        pressure: undefined,
+                        sunset: undefined,
+                        error: undefined
+                    }
+    
 
             gettingWeather = async (event) => 
             {
